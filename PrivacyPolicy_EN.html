@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Ago Launcher Focus — Privacy Policy</title>
+<style>
+
+:root{--fg:#1a1d21;--fg-soft:#5b6470;--bg:#ffffff;--bg-page:#f4f6f8;
+--accent:#2f5d8a;--border:#e4e8ec;--note-bg:#eef4fa;--note-bd:#2f5d8a;
+--code-bg:#f0f2f5;--row-alt:#fafbfc}
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+color:var(--fg);background:var(--bg-page);margin:0;line-height:1.78;
+-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+main{max-width:780px;margin:40px auto;background:var(--bg);
+padding:52px 60px 60px;border-radius:14px;
+box-shadow:0 1px 3px rgba(20,30,50,.07),0 8px 30px rgba(20,30,50,.05)}
+h1{font-size:1.72rem;line-height:1.3;margin:0 0 .2em;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.22rem;margin:2.1em 0 .6em;padding-bottom:.32em;border-bottom:1px solid var(--border);font-weight:650}
+h3{font-size:1.04rem;margin:1.5em 0 .4em;font-weight:620}
+p{margin:.7em 0}
+ul,ol{padding-left:1.45em;margin:.6em 0}
+li{margin:.32em 0}
+li>p{margin:.2em 0}
+blockquote{margin:1em 0;padding:.78em 1.1em;background:var(--note-bg);
+border-left:3px solid var(--note-bd);border-radius:0 8px 8px 0}
+blockquote p{margin:.28em 0}
+table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.95rem;
+box-shadow:0 0 0 1px var(--border);border-radius:8px;overflow:hidden}
+th,td{border-bottom:1px solid var(--border);padding:9px 13px;text-align:left;vertical-align:top}
+th{background:var(--bg-page);font-weight:620}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:var(--row-alt)}
+code{font-family:"SF Mono",ui-monospace,Consolas,Menlo,monospace;
+background:var(--code-bg);padding:.12em .42em;border-radius:5px;font-size:.88em;color:#b53d6a}
+hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}
+strong{font-weight:650}
+em{color:var(--fg-soft)}
+a{color:var(--accent)}
+@media(max-width:680px){
+ main{margin:0;border-radius:0;padding:30px 22px 40px}
+ h1{font-size:1.42rem}
+ table{font-size:.86rem}
+ th,td{padding:7px 9px}
+}
+@media print{body{background:#fff}main{box-shadow:none;margin:0;max-width:none;padding:0}}
+
+</style>
+</head>
+<body>
+<main>
+<h1>Ago Launcher Focus — Privacy Policy</h1>
+<blockquote>
+<p>Last updated: 2026-08-08 · Version: v1.3</p>
+<p>🌐 This English version is the official authoritative version of this Privacy Policy. Any translation displayed by browser auto-translate is for reference only.</p>
+</blockquote>
+<p>This Privacy Policy explains how <strong>Ago Launcher Focus</strong> ("the App") handles data related to your device, permissions, and usage. The App is provided by its developer ("we" or "us"). <strong>Our principle is data minimization: the App requires no registration, collects no information that identifies you personally, and operates no server backend that stores your data.</strong></p>
+<hr />
+<h2>1. Data We Collect and Process</h2>
+<p>The App processes data only where necessary to provide the following features, either locally on your device or via third-party services:</p>
+<h3>1.1 Approximate location (for weather)</h3>
+<ul>
+<li><strong>Purpose</strong>: to obtain your current local weather and display it on the home screen.</li>
+<li><strong>How</strong>: with your runtime authorization of <code>ACCESS_COARSE_LOCATION</code>, the App obtains an approximate coordinate, sends it over HTTPS to the third-party weather service <strong>Open-Meteo</strong> to retrieve weather data, and may use the Android system <strong>Geocoder</strong> to reverse-resolve the coordinate into a city name for display.</li>
+<li><strong>Optional</strong>: you may deny location permission and select a city manually in the App instead; other features are unaffected.</li>
+<li><strong>Not stored</strong>: location coordinates are not saved in the App, nor sent to any server we operate (we operate no server).</li>
+</ul>
+<h3>1.2 Media metadata of the currently playing song (for on-screen title, optional)</h3>
+<ul>
+<li><strong>Purpose</strong>: to display the title/artist of the song you are currently playing in the home media control bar.</li>
+<li><strong>How</strong>: with your <strong>actively granted Notification access</strong>, the App reads metadata (title, artist, etc.) of the active media session via the system <code>MediaSessionManager</code>.</li>
+<li><strong>Key point</strong>: this metadata is <strong>read and displayed only on your device — it is not collected, stored, or uploaded</strong> to us or any third party. The App <strong>does not read notification body text, chat content, or other notification details</strong>.</li>
+<li><strong>Revocable</strong>: you may revoke Notification access at any time in system settings; only song-title display is affected.</li>
+</ul>
+<h3>1.3 Your chosen app bindings and allowlist (local only)</h3>
+<ul>
+<li><strong>Purpose</strong>: as a launcher, the App records the apps you assign to the 6 home-screen dots, hidden-app bindings, and the home-screen app allowlist.</li>
+<li><strong>How</strong>: these choices are stored only on this device in <strong>EncryptedSharedPreferences</strong> (AES-256) and <strong>never uploaded</strong>.</li>
+<li><strong>Querying installed apps</strong>: to list bindable apps and detect system default apps (dialer / camera / gallery / SMS / music), the App uses Android's scoped <code>&lt;queries&gt;</code> declaration for local queries; these results are <strong>used locally only — no app list is uploaded</strong>.</li>
+</ul>
+<h3>1.4 Purchases and subscriptions (Google Play Billing)</h3>
+<ul>
+<li><strong>Purpose</strong>: to process the PRO "lifetime buyout" (one-time in-app purchase) and "yearly subscription" (with a 30-day free trial).</li>
+<li><strong>How</strong>: all payment flows are handled by <strong>Google Play Billing</strong>. The App <strong>does not collect or store</strong> your payment credentials, card details, or order personal data. Purchase validation relies only on the purchase state returned by Google Play and, in the release build, a Play Integrity device-integrity token. Both subscription and buyout are tied to your Google account; Google manages subscription state and renewals. The App stores no account information that identifies you, locally or on any server.</li>
+</ul>
+<h2>2. Data We Do Not Collect</h2>
+<p>The App <strong>does not collect</strong> any of the following:
+- Personal identifiers (name, email, phone number, account);
+- Device identifiers (IMEI, advertising ID, Android ID, serial number);
+- Financial and payment-credential information;
+- Health or sensitive personal data;
+- Contacts, SMS, call logs;
+- Notification body text, messages, or chat content;
+- Photos, files, or media-library contents;
+- Browsing or search history;
+- Crash logs or performance data (the App integrates <strong>no</strong> crash-reporting / analytics SDK, such as Crashlytics or Firebase Analytics).</p>
+<blockquote>
+<p>The App contains <strong>no advertising</strong> and integrates <strong>no advertising SDK</strong> (e.g., AdMob); it therefore collects no advertising identifiers or data for advertising purposes.</p>
+</blockquote>
+<h2>3. Third-Party Services</h2>
+<p>The App interacts with the following third-party services during operation; their respective terms and privacy policies apply:</p>
+<table>
+<thead>
+<tr>
+<th>Third party</th>
+<th>Purpose</th>
+<th>Data transferred?</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Open-Meteo</strong></td>
+<td>Weather data source</td>
+<td>Yes (HTTPS)</td>
+<td>Approximate location coordinate (as a request parameter)</td>
+</tr>
+<tr>
+<td><strong>Android system Geocoder</strong></td>
+<td>Reverse geocoding (coordinate → city name)</td>
+<td>Possibly (depends on system implementation)</td>
+<td>Approximate location coordinate</td>
+</tr>
+<tr>
+<td><strong>Google Play Billing</strong></td>
+<td>In-app purchase processing</td>
+<td>Handled by Google</td>
+<td>Purchase-related data (managed by Google)</td>
+</tr>
+<tr>
+<td><strong>Google Play Integrity</strong> (purchase validation)</td>
+<td>Device-integrity verification</td>
+<td>Handled by Google</td>
+<td>Integrity token (encrypted, issued by Google)</td>
+</tr>
+</tbody>
+</table>
+<p>Other than the above, the App shares data with no other third party and performs no cross-app tracking.</p>
+<h2>4. Permissions</h2>
+<p>The App declares in its manifest or requests at runtime the following permissions, for these purposes:</p>
+<ul>
+<li><code>ACCESS_COARSE_LOCATION</code> — approximate location for weather (runtime authorization; deniable).</li>
+<li><code>INTERNET</code> — weather requests (Open-Meteo), Google Play in-app purchases, and integrity checks.</li>
+<li><code>ACCESS_WIFI_STATE</code> / <code>ACCESS_NETWORK_STATE</code> — checking network availability before connecting.</li>
+<li><code>BLUETOOTH</code> (declared only up to API 30) — showing the on/off state of the home-screen Bluetooth quick icon; API 31+ no longer requires this declaration.</li>
+<li><code>VIBRATE</code> — haptic feedback for long-press, dial, and other actions.</li>
+<li><strong>Notification access</strong> (granted actively by the user; not a <code>&lt;uses-permission&gt;</code>) — reading media-session metadata of the currently playing song for display (see 1.2).</li>
+<li>Scoped <code>&lt;queries&gt;</code> — locally querying installed apps for home-screen app binding, system-default-app detection, and default-launcher determination (see 1.3).</li>
+</ul>
+<blockquote>
+<p>The App does <strong>not</strong> request <code>READ_PHONE_STATE</code>, <code>READ_EXTERNAL_STORAGE</code>, or <code>QUERY_ALL_PACKAGES</code>, and does <strong>not</strong> use Device Admin or Device Owner permissions.</p>
+</blockquote>
+<h2>5. Data Security</h2>
+<ul>
+<li><strong>Encrypted transit</strong>: all outbound network requests use HTTPS.</li>
+<li><strong>Encrypted local storage</strong>: preferences such as your password, app bindings, and allowlist are stored on this device using <code>EncryptedSharedPreferences</code> (AES-256).</li>
+<li><strong>No server</strong>: we operate no backend server that receives or stores your data; uninstalling the App deletes all local data, with nothing retained.</li>
+</ul>
+<h2>6. Data Retention and Deletion</h2>
+<ul>
+<li>The App retains none of your data on any server.</li>
+<li>Uninstalling the App deletes all locally stored data (password, bindings, allowlist, preferences).</li>
+<li>You may revoke granted permissions (location, Notification access, etc.) at any time in system settings.</li>
+<li>The Focus-lock / Timer-lock recovery methods described in the Terms of Use (Section 7) — such as clearing app data or uninstalling — likewise delete all local data.</li>
+</ul>
+<h2>7. Children's Privacy</h2>
+<p>The App is not directed at children under 13, and we do not knowingly collect personal information from children. Some features (Focus lock, etc.) should not be used by children without supervision. If you believe we have inadvertently collected information from a child, please contact us as described in Section 11 and we will address it promptly.</p>
+<h2>8. International Users and Cross-Border Data</h2>
+<p>The App is available to users worldwide. Weather requests are sent over HTTPS to Open-Meteo (whose servers may be located outside your country/region); only an approximate location coordinate is transmitted, with no information that identifies you. Google Play Billing / Integrity data handling follows Google's relevant policies.</p>
+<h2>9. Your Rights</h2>
+<p>Under the laws of your jurisdiction (where applicable), you may have rights to be informed, and to access, correct, delete, or withdraw consent. Because the App stores no personal data about you on servers, you can: revoke permissions at any time in system settings; uninstall the App to fully delete local data. For further assistance, contact us.</p>
+<h2>10. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Updated policies will be published in the App or on this page, with the "Last updated" date above revised accordingly. If you continue to use the App after a change, you are deemed to accept the revised policy; if you do not agree, please stop using and uninstall the App.</p>
+<h2>11. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy or the App's data handling, contact:
+- Email: <strong>agowolf@gmail.com</strong></p>
+<h2>12. Governing Law and Dispute Resolution</h2>
+<p>The formation, validity, interpretation, and dispute resolution of this Privacy Policy are governed by the <strong>laws of the People's Republic of China</strong> (for the purposes of this Policy, excluding the laws of the Hong Kong SAR, the Macao SAR, and the Taiwan region). Any dispute arising from this Policy or the App shall first be resolved through friendly negotiation; failing that, either party may bring an action before a <strong>people's court with jurisdiction at the developer's location</strong>.</p>
+<hr />
+<p><em>This Privacy Policy and the Terms of Use together constitute the compliance documents between you and us regarding the App. In the event of any inconsistency between this Policy and the Terms of Use, this Policy prevails on data/privacy matters.</em></p>
+</main>
+</body>
+</html>
