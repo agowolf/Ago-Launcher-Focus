@@ -10,42 +10,19 @@
 :root{--fg:#1a1d21;--fg-soft:#5b6470;--bg:#ffffff;--bg-page:#f4f6f8;
 --accent:#2f5d8a;--border:#e4e8ec;--note-bg:#eef4fa;--note-bd:#2f5d8a;
 --code-bg:#f0f2f5;--row-alt:#fafbfc}
-*{box-sizing:border-box}
-html{color-scheme:light}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-color:var(--fg);background:var(--bg-page);margin:0;line-height:1.78;
--webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-main{max-width:780px;margin:40px auto;background:var(--bg);
-padding:52px 60px 60px;border-radius:14px;
-box-shadow:0 1px 3px rgba(20,30,50,.07),0 8px 30px rgba(20,30,50,.05)}
+*{box-sizing:border-box}html{color-scheme:light}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--fg);background:var(--bg-page);margin:0;line-height:1.78;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+main{max-width:780px;margin:40px auto;background:var(--bg);padding:52px 60px 60px;border-radius:14px;box-shadow:0 1px 3px rgba(20,30,50,.07),0 8px 30px rgba(20,30,50,.05)}
 h1{font-size:1.72rem;line-height:1.3;margin:0 0 .2em;font-weight:700;letter-spacing:-.01em}
 h2{font-size:1.22rem;margin:2.1em 0 .6em;padding-bottom:.32em;border-bottom:1px solid var(--border);font-weight:650}
 h3{font-size:1.04rem;margin:1.5em 0 .4em;font-weight:620}
-p{margin:.7em 0}
-ul,ol{padding-left:1.45em;margin:.6em 0}
-li{margin:.32em 0}
-li>p{margin:.2em 0}
-blockquote{margin:1em 0;padding:.78em 1.1em;background:var(--note-bg);
-border-left:3px solid var(--note-bd);border-radius:0 8px 8px 0}
-blockquote p{margin:.28em 0}
-table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.95rem;
-box-shadow:0 0 0 1px var(--border);border-radius:8px;overflow:hidden}
-th,td{border-bottom:1px solid var(--border);padding:9px 13px;text-align:left;vertical-align:top}
-th{background:var(--bg-page);font-weight:620}
-tr:last-child td{border-bottom:none}
-tr:nth-child(even) td{background:var(--row-alt)}
-code{font-family:"SF Mono",ui-monospace,Consolas,Menlo,monospace;
-background:var(--code-bg);padding:.12em .42em;border-radius:5px;font-size:.88em;color:#b53d6a}
-hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}
-strong{font-weight:650}
-em{color:var(--fg-soft)}
-a{color:var(--accent)}
-@media(max-width:680px){
- main{margin:0;border-radius:0;padding:30px 22px 40px}
- h1{font-size:1.42rem}
- table{font-size:.86rem}
- th,td{padding:7px 9px}
-}
+p{margin:.7em 0}ul,ol{padding-left:1.45em;margin:.6em 0}li{margin:.32em 0}li>p{margin:.2em 0}
+blockquote{margin:1em 0;padding:.78em 1.1em;background:var(--note-bg);border-left:3px solid var(--note-bd);border-radius:0 8px 8px 0}blockquote p{margin:.28em 0}
+table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.95rem;box-shadow:0 0 0 1px var(--border);border-radius:8px;overflow:hidden}
+th,td{border-bottom:1px solid var(--border);padding:9px 13px;text-align:left;vertical-align:top}th{background:var(--bg-page);font-weight:620}tr:last-child td{border-bottom:none}tr:nth-child(even) td{background:var(--row-alt)}
+code{font-family:"SF Mono",ui-monospace,Consolas,Menlo,monospace;background:var(--code-bg);padding:.12em .42em;border-radius:5px;font-size:.88em;color:#b53d6a}
+hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-weight:650}em{color:var(--fg-soft)}a{color:var(--accent)}
+@media(max-width:680px){main{margin:0;border-radius:0;padding:30px 22px 40px}h1{font-size:1.42rem}table{font-size:.86rem}th,td{padding:7px 9px}}
 @media print{body{background:#fff}main{box-shadow:none;margin:0;max-width:none;padding:0}}
 
 </style>
@@ -54,7 +31,7 @@ a{color:var(--accent)}
 <main>
 <h1>Ago Launcher Focus — Terms of Use</h1>
 <blockquote>
-<p>Last updated: 2026-08-08 · Version: v1.4</p>
+<p>Last updated: 2026-08-08 · Version: v1.0</p>
 <p>🌐 This English version is the official authoritative version of these Terms. Any translation displayed by browser auto-translate is for reference only.</p>
 </blockquote>
 <p>Welcome to <strong>Ago Launcher Focus</strong> ("the App"). The App is provided by its developer ("we" or "us") and is a pure-black minimalist Android home-screen launcher, offering a ticked clock dial, hidden app entries, weather and media controls on the home screen, and optional "Focus Lock" and "Hidden Apps" advanced features.</p>
@@ -87,34 +64,42 @@ a{color:var(--accent)}
 <li><strong>Restoring entitlements</strong>: both Lifetime Buyout and an active subscription are tied to your Google account. After reinstalling or switching devices under the same Google account, a purchased Lifetime Buyout or still-valid subscription is restored automatically (PRO status is determined by the Google Play purchase record).</li>
 </ol>
 <h2>5. Permissions and Data Use</h2>
-<p>To provide its features, the App requests the following permissions. The purpose of each permission is detailed in the Privacy Policy; this Section is a summary:
-- <strong>Location (approximate, <code>ACCESS_COARSE_LOCATION</code>)</strong>: used to obtain local weather via approximate positioning; deniable — you may instead select a city manually.
-- <strong>Notification access (granted actively by the user)</strong>: used to read metadata of the currently playing song (e.g., title) and display it in the home media control bar. The App <strong>only reads media-session metadata</strong>; it does not read your notification body text, and does not collect or upload your notifications or chat content.
-- <strong>Querying installed apps (scoped <code>&lt;queries&gt;</code>)</strong>: as a launcher, used to list apps available for home-screen binding, to detect system default apps (dialer / camera / gallery / SMS / music), and to determine whether the App is the system default launcher; these queries are performed locally only, and no app list is uploaded.
-- <strong>Network / Wi-Fi state</strong>: used for weather-data connections and Google Play in-app purchases.
-- <strong>Bluetooth (declared only up to API 30)</strong>: used to show the on/off state of the home-screen Bluetooth quick icon; API 31+ no longer requires this declaration.
-- <strong>Vibration (<code>VIBRATE</code>)</strong>: used for haptic feedback on long-press, dial, and other actions.</p>
+<p>To provide its features, the App requests the following permissions. The purpose of each permission is detailed in the Privacy Policy; this Section is a summary:</p>
+<ul>
+<li><strong>Location (approximate, <code>ACCESS_COARSE_LOCATION</code>)</strong>: used to obtain local weather via approximate positioning; deniable — you may instead select a city manually.</li>
+<li><strong>Notification access (granted actively by the user)</strong>: used to read metadata of the currently playing song (e.g., title) and display it in the home media control bar. The App <strong>only reads media-session metadata</strong>; it does not read your notification body text, and does not collect or upload your notifications or chat content.</li>
+<li><strong>Querying installed apps (scoped <code>&lt;queries&gt;</code>)</strong>: as a launcher, used to list apps available for home-screen binding, to detect system default apps (dialer / camera / gallery / SMS / music), and to determine whether the App is the system default launcher; these queries are performed locally only, and no app list is uploaded.</li>
+<li><strong>Network / Wi-Fi state</strong>: used for weather-data connections and Google Play in-app purchases.</li>
+<li><strong>Bluetooth (declared only up to API 30)</strong>: used to show the on/off state of the home-screen Bluetooth quick icon; API 31+ no longer requires this declaration.</li>
+<li><strong>Vibration (<code>VIBRATE</code>)</strong>: used for haptic feedback on long-press, dial, and other actions.</li>
+</ul>
 <blockquote>
 <p>The App does <strong>not</strong> request <code>READ_PHONE_STATE</code>, does <strong>not</strong> use Device Admin or Device Owner mode, and no longer requests <code>QUERY_ALL_PACKAGES</code> (replaced by a scoped <code>&lt;queries&gt;</code> declaration).</p>
 </blockquote>
 <p>Other than what is necessary to provide the features above, we will not access the data covered by these permissions for any other purpose. For details on data collection, storage, and (if any) sharing, the Privacy Policy prevails.</p>
 <h2>6. User Responsibility and Lawful Use</h2>
-<p>You agree to:
-1. Use the App lawfully and reasonably, and not for any purpose that violates laws, regulations, or public order and good morals.
-2. Keep your exit/lock password safe. The default password is <code>1234</code>; <strong>we strongly recommend changing it immediately on first use to a password that others cannot easily guess</strong>. You are solely responsible for any consequences of a disclosed password or of keeping the default password.
-3. Not attempt to obtain the App's source code or internal implementation through reverse engineering, decompilation, disassembly, or other means, except as expressly permitted by law.
-4. Not interfere with or disrupt the normal operation of the App by any means, or attempt to bypass the trial/purchase mechanism for advanced features (including, but not limited to, tampering with local purchase state).</p>
+<p>You agree to:</p>
+<ol>
+<li>Use the App lawfully and reasonably, and not for any purpose that violates laws, regulations, or public order and good morals.</li>
+<li>Keep your exit/lock password safe. The default password is <code>1234</code>; <strong>we strongly recommend changing it immediately on first use to a password that others cannot easily guess</strong>. You are solely responsible for any consequences of a disclosed password or of keeping the default password.</li>
+<li>Not attempt to obtain the App's source code or internal implementation through reverse engineering, decompilation, disassembly, or other means, except as expressly permitted by law.</li>
+<li>Not interfere with or disrupt the normal operation of the App by any means, or attempt to bypass the trial/purchase mechanism for advanced features (including, but not limited to, tampering with local purchase state).</li>
+</ol>
 <h2>7. Focus Lock and Timer Lock — Risks and Recovery</h2>
 <ol>
 <li><strong>What these features do.</strong> The App offers optional "Focus Lock" and "Timer Lock" features to help you reduce phone distraction. Focus Lock, when enabled, requires you to either turn it off in Settings or enter your exit password in order to leave the home screen. Timer Lock keeps the App active as your home screen until a time you set. <strong>Both features rely solely on the App being set as the system default launcher (so it can handle Home and Back) — the App does NOT request Device Admin or Device Owner permissions, and does not provide a strong Kiosk mode that requires ADB to install.</strong></li>
 <li><strong>Important behavior of Timer Lock — please read.</strong> Once a Timer Lock is active, <strong>it cannot be cancelled before the set time expires — even by entering the correct exit password.</strong> You must wait until the timer ends, or use one of the force-exit methods below. Please set a sensible lock duration and avoid setting excessively long timers.</li>
-<li><strong>If you are locked out — force-exit / recovery.</strong> Because the App holds no device-level privileges, you can always regain full access to your device by any of these methods:
-   - <strong>Clear app data</strong>: System Settings &gt; Apps &gt; Ago Launcher Focus &gt; Storage &gt; Clear data (this resets the App and removes the lock; you will need to reconfigure it afterward).
-   - <strong>Uninstall the App</strong>: System Settings &gt; Apps &gt; Ago Launcher Focus &gt; Uninstall (you can reinstall it afterward from the Google Play Store).
-   - <strong>Android Safe Mode</strong>: reboot into Safe Mode (long-press the Power button, then long-press "Power off" / "Reboot to safe mode"); in Safe Mode, third-party launchers are disabled and you can reach system settings to clear data or switch launchers.
-   - <strong>Uninstall remotely</strong>: on a computer, open play.google.com, find Ago Launcher Focus in your app library, and uninstall it remotely.
-   - <strong>ADB</strong> (if developer tools are available): run <code>adb shell pm clear ago.launcher.focus</code>.
+<li><strong>If you are locked out — force-exit / recovery.</strong> Because the App holds no device-level privileges, you can always regain full access to your device by any of these methods:</li>
+</ol>
+<ul>
+<li><strong>Clear app data</strong>: System Settings &gt; Apps &gt; Ago Launcher Focus &gt; Storage &gt; Clear data (this resets the App and removes the lock; you will need to reconfigure it afterward).</li>
+<li><strong>Uninstall the App</strong>: System Settings &gt; Apps &gt; Ago Launcher Focus &gt; Uninstall (you can reinstall it afterward from the Google Play Store).</li>
+<li><strong>Android Safe Mode</strong>: reboot into Safe Mode (long-press the Power button, then long-press "Power off" / "Reboot to safe mode"); in Safe Mode, third-party launchers are disabled and you can reach system settings to clear data or switch launchers.</li>
+<li><strong>Uninstall remotely</strong>: on a computer, open play.google.com, find Ago Launcher Focus in your app library, and uninstall it remotely.</li>
+<li><strong>ADB</strong> (if developer tools are available): run <code>adb shell pm clear ago.launcher.focus</code>.
    Note: clearing data or uninstalling deletes all locally stored data (see Privacy Policy Section 6). The in-app Help &amp; Feedback &gt; User Guide also describes these recovery methods.</li>
+</ul>
+<ol start="4">
 <li><strong>Limitation of liability.</strong> To the maximum extent permitted by law, <strong>we are not liable for any inability to exit a lock, loss of access to your device, or any direct or indirect loss arising from a forgotten password, improper settings, or device/system abnormalities</strong> — including situations where you cannot exit a Timer Lock before it expires. You use these features at your own risk.</li>
 <li><strong>Lawful use.</strong> Do not use these features to restrict another person's use of their own device, or for monitoring or control without that person's consent.</li>
 </ol>
@@ -125,12 +110,14 @@ a{color:var(--accent)}
 <li>If advertising is introduced in a future version, we will update these Terms and notify you in the App or on a relevant page.</li>
 </ol>
 <h2>9. Third-Party Services</h2>
-<p>The App interacts with the following third-party services during operation; their terms and privacy policies apply (data-interaction details are in Privacy Policy Section 3):
-- <strong>Open-Meteo</strong>: weather data source (sends an approximate location coordinate over HTTPS to retrieve weather).
-- <strong>Android system Geocoder</strong>: reverse-resolves an approximate location coordinate into a city name for dual-clock display.
-- <strong>Google Play Billing</strong>: in-app purchase processing (Google manages payment-related data).
-- <strong>Google Play Integrity</strong>: device-integrity verification during purchase validation (Google issues an encrypted token).
-- Device-manufacturer system components: used to launch system default apps such as dialer, camera, gallery, SMS, and music.</p>
+<p>The App interacts with the following third-party services during operation; their terms and privacy policies apply (data-interaction details are in Privacy Policy Section 3):</p>
+<ul>
+<li><strong>Open-Meteo</strong>: weather data source (sends an approximate location coordinate over HTTPS to retrieve weather).</li>
+<li><strong>Android system Geocoder</strong>: reverse-resolves an approximate location coordinate into a city name for dual-clock display.</li>
+<li><strong>Google Play Billing</strong>: in-app purchase processing (Google manages payment-related data).</li>
+<li><strong>Google Play Integrity</strong>: device-integrity verification during purchase validation (Google issues an encrypted token).</li>
+<li>Device-manufacturer system components: used to launch system default apps such as dialer, camera, gallery, SMS, and music.</li>
+</ul>
 <h2>10. Intellectual Property</h2>
 <p>The intellectual property in the App and all of its contents (including, but not limited to, the interface, icons, text, code, and design) belongs to us or the respective rights holders. These Terms grant you no intellectual-property rights in the App; you receive only a non-transferable, non-exclusive, revocable license to use the App in accordance with these Terms.</p>
 <h2>11. Disclaimer</h2>
@@ -151,8 +138,10 @@ a{color:var(--accent)}
 <li>Any dispute arising from these Terms or the App shall first be resolved through friendly negotiation; failing that, either party may bring an action before a <strong>people's court with jurisdiction at the developer's location</strong>.</li>
 </ol>
 <h2>16. Contact Us</h2>
-<p>If you have any questions about these Terms or the App, contact us at:
-- Email: <strong>agowolf@gmail.com</strong></p>
+<p>If you have any questions about these Terms or the App, contact us at:</p>
+<ul>
+<li>Email: <strong>agowolf@gmail.com</strong></li>
+</ul>
 <hr />
 <p><em>These Terms of Use and the Privacy Policy together constitute the entire agreement between you and us regarding the App.</em></p>
 </main>
