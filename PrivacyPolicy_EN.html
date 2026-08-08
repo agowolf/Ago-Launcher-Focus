@@ -34,7 +34,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <p>Last updated: 2026-08-08 · Version: v1.0</p>
 <p>🌐 This English version is the official authoritative version of this Privacy Policy. Any translation displayed by browser auto-translate is for reference only.</p>
 </blockquote>
-<p>This Privacy Policy explains how <strong>Ago Launcher Focus</strong> ("the App") handles data related to your device, permissions, and usage. The App is provided by its developer ("we" or "us"). <strong>Our principle is data minimization: the App requires no registration, collects no information that identifies you personally, and operates no server backend that stores your data.</strong></p>
+<p>This Privacy Policy explains how <strong>Ago Launcher Focus</strong> ("the App") handles data related to your device, permissions, and usage. The App is provided by its developer ("we" or "us"). <strong>Our principle is data minimization: the App provides no account registration or login — no account is needed to use any feature; it collects no information that identifies you personally, and operates no server backend that stores your data.</strong></p>
 <hr />
 <h2>1. Data We Collect and Process</h2>
 <p>The App processes data only where necessary to provide the following features, either locally on your device or via third-party services:</p>
@@ -61,7 +61,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <h3>1.4 Purchases and subscriptions (Google Play Billing)</h3>
 <ul>
 <li><strong>Purpose</strong>: to process the PRO "lifetime buyout" (one-time in-app purchase) and "yearly subscription" (with a 30-day free trial).</li>
-<li><strong>How</strong>: all payment flows are handled by <strong>Google Play Billing</strong>. The App <strong>does not collect or store</strong> your payment credentials, card details, or order personal data. Purchase validation relies only on the purchase state returned by Google Play and, in the release build, a Play Integrity device-integrity token. Both subscription and buyout are tied to your Google account; Google manages subscription state and renewals. The App stores no account information that identifies you, locally or on any server.</li>
+<li><strong>How</strong>: all payment flows are handled by <strong>Google Play Billing</strong>. The App <strong>does not collect or store</strong> your payment credentials, card details, or order personal data. Purchase validation relies only on the purchase state returned by Google Play. Both subscription and buyout are tied to your Google account; Google manages subscription state and renewals. The App stores no account information that identifies you, locally or on any server.</li>
 </ul>
 <h2>2. Data We Do Not Collect</h2>
 <p>The App <strong>does not collect</strong> any of the following:</p>
@@ -109,12 +109,6 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <td>Handled by Google</td>
 <td>Purchase-related data (managed by Google)</td>
 </tr>
-<tr>
-<td><strong>Google Play Integrity</strong> (purchase validation)</td>
-<td>Device-integrity verification</td>
-<td>Handled by Google</td>
-<td>Integrity token (encrypted, issued by Google)</td>
-</tr>
 </tbody>
 </table>
 <p>Other than the above, the App shares data with no other third party and performs no cross-app tracking.</p>
@@ -122,7 +116,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <p>The App declares in its manifest or requests at runtime the following permissions, for these purposes:</p>
 <ul>
 <li><code>ACCESS_COARSE_LOCATION</code> — approximate location for weather (runtime authorization; deniable).</li>
-<li><code>INTERNET</code> — weather requests (Open-Meteo), Google Play in-app purchases, and integrity checks.</li>
+<li><code>INTERNET</code> — weather requests (Open-Meteo) and Google Play in-app purchases.</li>
 <li><code>ACCESS_WIFI_STATE</code> / <code>ACCESS_NETWORK_STATE</code> — checking network availability before connecting.</li>
 <li><code>BLUETOOTH</code> (declared only up to API 30) — showing the on/off state of the home-screen Bluetooth quick icon; API 31+ no longer requires this declaration.</li>
 <li><code>VIBRATE</code> — haptic feedback for long-press, dial, and other actions.</li>
@@ -148,7 +142,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <h2>7. Children's Privacy</h2>
 <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children. Some features (Focus lock, etc.) should not be used by children without supervision. If you believe we have inadvertently collected information from a child, please contact us as described in Section 11 and we will address it promptly.</p>
 <h2>8. International Users and Cross-Border Data</h2>
-<p>The App is available to users worldwide. Weather requests are sent over HTTPS to Open-Meteo (whose servers may be located outside your country/region); only an approximate location coordinate is transmitted, with no information that identifies you. Google Play Billing / Integrity data handling follows Google's relevant policies.</p>
+<p>The App is available to users worldwide. Weather requests are sent over HTTPS to Open-Meteo (whose servers may be located outside your country/region); only an approximate location coordinate is transmitted, with no information that identifies you. Google Play Billing data handling follows Google's relevant policies.</p>
 <h2>9. Your Rights</h2>
 <p>Under the laws of your jurisdiction (where applicable), you may have rights to be informed, and to access, correct, delete, or withdraw consent. Because the App stores no personal data about you on servers, you can: revoke permissions at any time in system settings; uninstall the App to fully delete local data. For further assistance, contact us.</p>
 <h2>10. Changes to This Policy</h2>
