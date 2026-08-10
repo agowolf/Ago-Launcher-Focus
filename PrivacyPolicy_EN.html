@@ -47,7 +47,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 </ul>
 <h3>1.2 Media metadata of the currently playing song (for on-screen title, optional)</h3>
 <ul>
-<li><strong>Purpose</strong>: to display the title/artist of the song you are currently playing in the home media control bar.</li>
+<li><strong>Purpose</strong>: to display the title/artist of the song you are currently playing on the home screen; you may also swipe up/down on the dial to switch to the previous/next track (this is done via system media keys and does NOT require Notification access).</li>
 <li><strong>How</strong>: with your <strong>actively granted Notification access</strong>, the App reads metadata (title, artist, etc.) of the active media session via the system <code>MediaSessionManager</code>.</li>
 <li><strong>Key point</strong>: this metadata is <strong>read and displayed only on your device — it is not collected, stored, or uploaded</strong> to us or any third party. The App <strong>does not read notification body text, chat content, or other notification details</strong>.</li>
 <li><strong>Revocable</strong>: you may revoke Notification access at any time in system settings; only song-title display is affected.</li>
