@@ -31,7 +31,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <main>
 <h1>Ago Launcher Focus — Privacy Policy</h1>
 <blockquote>
-<p>Last updated: 2026-08-12 · Version: v1.1</p>
+<p>Last updated: 2026-08-20 · Version: v1.2</p>
 <p>🌐 This English version is the official authoritative version of this Privacy Policy. Any translation displayed by browser auto-translate is for reference only.</p>
 </blockquote>
 <p>This Privacy Policy explains how <strong>Ago Launcher Focus</strong> ("the App") handles data related to your device, permissions, and usage. The App is provided by its developer ("we" or "us"). <strong>Our principle is data minimization: the App provides no account registration or login — no account is needed to use any feature; it collects no information that identifies you personally, and operates no server backend that stores your data.</strong></p>
@@ -55,12 +55,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <h3>1.3 Your chosen app bindings and allowlist (local only)</h3>
 <ul>
 <li><strong>Purpose</strong>: as a launcher, the App records the apps you assign to the 6 home-screen dots, hidden-app bindings, and the home-screen app allowlist.</li>
-<li><strong>How</strong>: these choices are stored only on this device in <strong>EncryptedSharedPreferences</strong> (AES-256) and <strong>never uploaded</strong>.</li>
+<li><strong>How</strong>: these choices are stored only on this device in AES-256 encrypted local storage (key held in the Android Keystore) and <strong>never uploaded</strong>.</li>
 <li><strong>Querying installed apps</strong>: to list bindable apps and detect system default apps (dialer / camera / gallery / SMS / music), the App uses Android's scoped <code>&lt;queries&gt;</code> declaration for local queries; these results are <strong>used locally only — no app list is uploaded</strong>.</li>
 </ul>
 <h3>1.4 Purchases and subscriptions (Google Play Billing)</h3>
 <ul>
-<li><strong>Purpose</strong>: to process the PRO "lifetime buyout" (one-time in-app purchase) and "yearly subscription" (with a 30-day free trial). Purchasing PRO unlocks all advanced features, including the "Hidden Apps" feature shared by both skins (Focus and Line).</li>
+<li><strong>Purpose</strong>: to process the PRO "lifetime buyout" (one-time in-app purchase) and "yearly subscription" (with a 30-day free trial). Purchasing PRO unlocks: (1) the "Hidden Apps" feature in the Focus theme; (2) the entire Focus Line theme.</li>
 <li><strong>How</strong>: all payment flows are handled by <strong>Google Play Billing</strong>. The App <strong>does not collect or store</strong> your payment credentials, card details, or order personal data. Purchase validation relies only on the purchase state returned by Google Play. Both subscription and buyout are tied to your Google account; Google manages subscription state and renewals. The App stores no account information that identifies you, locally or on any server.</li>
 </ul>
 <h2>2. Data We Do Not Collect</h2>
@@ -109,6 +109,12 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <td>Handled by Google</td>
 <td>Purchase-related data (managed by Google)</td>
 </tr>
+<tr>
+<td><strong>YouTube</strong></td>
+<td>Demo video link in Help &amp; Feedback (opens only when the user taps it)</td>
+<td>No (link only)</td>
+<td>None</td>
+</tr>
 </tbody>
 </table>
 <p>Other than the above, the App shares data with no other third party and performs no cross-app tracking.</p>
@@ -129,7 +135,7 @@ hr{border:none;border-top:1px solid var(--border);margin:2.2em 0}strong{font-wei
 <h2>5. Data Security</h2>
 <ul>
 <li><strong>Encrypted transit</strong>: all outbound network requests use HTTPS.</li>
-<li><strong>Encrypted local storage</strong>: preferences such as your password, app bindings, and allowlist are stored on this device using <code>EncryptedSharedPreferences</code> (AES-256).</li>
+<li><strong>Encrypted local storage</strong>: preferences such as your password, app bindings, and allowlist are stored on this device in AES-256 encrypted local storage based on the Android Keystore (the key is held in the system Keystore and cannot be exported).</li>
 <li><strong>No server</strong>: we operate no backend server that receives or stores your data; uninstalling the App deletes all local data, with nothing retained.</li>
 </ul>
 <h2>6. Data Retention and Deletion</h2>
